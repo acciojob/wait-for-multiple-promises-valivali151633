@@ -12,9 +12,11 @@ const promises = [createRandomPromise(), createRandomPromise(), createRandomProm
 
 // Add a row with "Loading..." to the table
 const loadingRow = document.createElement("tr");
+loadingRow.id = "loading";
 const loadingCell = document.createElement("td");
 loadingCell.colSpan = 2;
 loadingCell.textContent = "Loading...";
+
 loadingRow.appendChild(loadingCell);
 document.getElementById("output").appendChild(loadingRow);
 
