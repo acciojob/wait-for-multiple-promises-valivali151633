@@ -8,7 +8,7 @@ function createRandomPromise() {
     });
 }
 
-const promises = [createRandomPromise(), createRandomPromise(), createRandomPromise()];
+const promises = [createRandomPromise(), createRandomPromise(), createRandomPromise(), createRandomPromise(), createRandomPromise(),];
 
 // Add a row with "Loading..." to the table
 const loadingRow = document.createElement("tr");
