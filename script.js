@@ -1,6 +1,6 @@
 // Create an array of three Promises that resolve after a random time between 1 and 3 seconds
 function createRandomPromise() {
-    const randomTime = Math.floor(Math.random() * 3000); // Random time between 1 and 3 seconds
+    const randomTime = Math.floor(Math.random() * 2000) + 1000; // Random time between 1 and 3 seconds
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve(randomTime);
