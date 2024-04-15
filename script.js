@@ -32,7 +32,7 @@ Promise.all(promises)
             const nameCell = document.createElement("td");
             const timeCell = document.createElement("td");
             nameCell.textContent = `Promise ${index + 1}`;
-            timeCell.textContent = (time / 1000).toFixed(3); // Convert milliseconds to seconds
+            timeCell.textContent = time / 1000; // Convert milliseconds to seconds
             row.appendChild(nameCell);
             row.appendChild(timeCell);
             document.getElementById("output").appendChild(row);
@@ -44,7 +44,7 @@ Promise.all(promises)
         const totalNameCell = document.createElement("td");
         const totalTimeCell = document.createElement("td");
         totalNameCell.textContent = "Total";
-        totalTimeCell.textContent = (totalTime / 1000).toFixed(3); // Convert milliseconds to seconds
+        totalTimeCell.textContent = totalTime / 1000; // Convert milliseconds to seconds
         totalRow.appendChild(totalNameCell);
         totalRow.appendChild(totalTimeCell);
         document.getElementById("output").appendChild(totalRow);
