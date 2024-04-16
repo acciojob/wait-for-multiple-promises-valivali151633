@@ -52,7 +52,7 @@ Promise.all(promises).then((data) =>{
 
 })
 .catch((error) => {
-    console.log("Error:", error);
+    console.error("Error:", error);
 });
 
 
