@@ -50,5 +50,5 @@ Promise.all(promises)
         document.getElementById("output").appendChild(totalRow);
     })
     .catch((error) => {
-        console.log("Error:", error);
+        console.error("Error:", error);
     });
