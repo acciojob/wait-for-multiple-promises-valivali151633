@@ -33,8 +33,8 @@ Promise.all(promises)
             const timeCell = document.createElement("td");
             promiseCell.textContent = `Promise ${index + 1}`;
             timeCell.textContent = time / 1000; // Convert milliseconds to seconds
-            datarow.append(promiseCell, timeCell);
-            // row.appendChild(timeCell);
+            datarow.appendChild(promiseCell);
+            datarow.appendChild(timeCell);
             document.getElementById("output").appendChild(datarow);
         });
 
